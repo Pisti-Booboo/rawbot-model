@@ -1,0 +1,417 @@
+### These settings are synced to GitHub by https://probot.github.io/apps/settings/
+### read how to config: https://github.com/probot/settings/blob/master/README.md
+### And see https://developer.github.com/v3/repos/#edit for all available settings.
+
+repository:
+   
+   ## The name of the repository. Changing this will rename the repository
+   #name: repo-name
+   
+   ## A short description of the repository that will show up on GitHub
+   #description: This is the description of this github repository.
+   
+   ## A comma-separated list of topics to set on the repository
+   #topics: game,app,art,concept,future,client,server,network,linux,video,editor,production,engineering,cad,3d
+   
+   ## A URL with more information about the repository
+   #homepage: https://jlc930.github.io/hello-world/
+   
+
+   ## `true` to make the repository private or `false` to make it public.
+   #private: true
+
+   ## the default branch for this repository.
+   default_branch: master
+
+   ## if true squash all the commits in pull requests for finally merge only one commit on head of the branch .
+   allow_squash_merge: false
+   ## allow or not to create a new branch for merging commits in the pull request on the head of the branch.
+   allow_merge_commit: false
+   ## rebase-merging keep all the commits of the pull requests and add them on the branch head.
+   allow_rebase_merge: true
+   
+
+   ### Features
+   
+   ## `true` to integrate the 'task tracking' or `false` to disable it.
+   has_issues: true
+
+   ## `true` for enable or `false` to disable the 'projects board'.
+   ## (If projects are disabled for the organization, passing `true` will cause an API error.)
+   has_projects: false
+   ## All of This for Only That... is my thinking when i see the utility of the 'projects board'.
+   ## Maybe with required approving review on a pull request 'projects board' will appear more usefull.
+   ## for now lets just use milestones and personal 'projects boards'
+
+   ## `true` to enable the wiki or `false` to disable it.
+   has_wiki: false
+   ## i dont want spend contributions efforts in gh-page AND wiki documentation.
+   ## i prefer focus on just one type of documentation.
+   ## gh-pages seems easier to integrate in releases for offline documentation and keep the same contribution process
+   ## but GitHub Pages are always public, even if the repo they’re coming form is private. 
+
+   ## Set to true or false to enable/disable the !deprecated! downloads features on the repository..
+   #has_downloads: false
+
+
+   
+## define Labels for Issues and Pull Requests
+## name: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+## description: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+labels:
+   
+ - name: referenced
+   color: 00ffff
+   description: issues with some pullrequest dedicated about it.
+ - name: referencing
+   color: 00ffff
+   description: pullrequest mentioning an issue report.
+ - name: filled
+   color: aaffaa
+   description: Issues report made with all fields filled
+ - name: confirmed
+   color: 00ff00
+   description: reliable content, confirmed by many people (can be reproduced if an issue)
+ - name: duplicate
+   color: ffaa33
+   description: duplication of already existing issue that have been reported before.
+ - name: irrelevant
+   color: aa0000
+   description: unrelated improper inappropriate incongruous inept inapt
+   
+ - name: type:improvement
+   color: 3333aa
+   description: asking for a new functionality or modification.
+ - name: type:feedback
+   color: 3333aa
+   description: give tests and analyses that could help for project development.
+ - name: type:trouble
+   color: 3333aa
+   description: about unintended behaviors or help request.
+   
+ - name: priority:high
+   color: ff0000
+   description: important critical Emergency, require urgent action.
+ - name: priority:normal
+   color: ffaa00
+   description: concerning common issues.
+ - name: priority:low
+   color: ffff00
+   description: trivial and minor topics, will be proceed if nothing more serious.
+   
+ - name: user-level:novice
+   color: ffaaff
+   description: issues made by beginners contributor
+ - name: user-level:average
+   color: ff00ff
+   description: issues made by intermediate contributor
+ - name: user-level:expert
+   color: aa00aa
+   description: issues made by high experienced contributors
+   
+ - name: language:English
+   color: 39ffcc
+   description: software language in use
+ - name: language:french
+   color: 39ffcc
+   description: software language in use
+ - name: language:Italian
+   color: 39ffcc
+   description: software language in use
+ - name: language:Portuguese
+   color: 39ffcc
+   description: software language in use
+ - name: language:Russian
+   color: 39ffcc
+   description: software language in use
+ - name: language:Spanish
+   color: 39ffcc
+   description: software language in use
+ - name: language:Arabic
+   color: 39ffcc
+   description: software language in use
+ - name: language:Chinese
+   color: 39ffcc
+   description: software language in use
+   
+ - name: version:pre-release
+   color: 01ff70
+   description: concern the last experimental release
+ - name: version:latest_release
+   color: 01ff70
+   description: concern the last stable release
+   
+ - name: device:laptop
+   color: 3d9970
+   description: computers with keyboard suitable for use while traveling.(notebook)
+ - name: device:desktop
+   color: 3d9970
+   description:  not portable computers, consists of separate case,monitor,keyboard,mouse.
+ - name: device:tablet
+   color: 3d9970
+   description: portable touchscreen(no keyboard) computers.
+ - name: device:smartphone
+   color: 3d9970
+   description: pocket computers, designed to be used in hand with main function of phone.
+   
+ - name: os:Linux
+   color: 2ecc40
+   description: occur on Linux.
+ - name: os:Mac
+   color: 2ecc40
+   description: running on MacOS..
+ - name: os:Windows
+   color: 2ecc40
+   description: run on Windows operating system
+ - name: os:Android
+   color: 2ecc40
+   description: using android software platform
+ - name: os:iOS
+   color: 2ecc40
+   description: using iOS software platform
+   
+ - name: report:help
+   color: 8888dd
+   description: unclear situation requesting assistance or more explication
+ - name: report:crash
+   color: 8888dd
+   description: reports premature software terminating
+ - name: report:freezing
+   color: 8888dd
+   description: infinite blocking loop.
+ - name: report:lag
+   color: 8888dd
+   description: software slowing down the interaction
+ - name: report:glitch
+   color: 8888dd
+   description: short lived fault in the software
+ - name: report:failure
+   color: 8888dd
+   description: a task cannot be completed.
+ - name: report:error
+   color: 8888dd
+   description: about silent passable error while processing
+ - name: report:risk
+   color: 8888dd
+   description: give warnings about eventual possible problem.
+ - name: report:conflict
+   color: 8888dd
+   description: incompatibility with others software or with specific devices.
+ - name: report:security
+   color: 8888dd
+   description: unwanted expose of privacy or unauthorized privileges access.
+   
+ - name: suggest:novelty
+   color: 8888dd
+   description: intend to add a newness feature or to make back again an old regrettable one.
+ - name: suggest:removal
+   color: 8888dd
+   description: arguments for  removing a useless deprecated feature
+ - name: suggest:change
+   color: 8888dd
+   description: review suggestion about an exiting feature needing replacement
+ - name: suggest:extension
+   color: 8888dd
+   description: suggest to add more functionality to an exiting feature.
+ - name: suggest:enhancement
+   color: 8888dd
+   description: suggest to increase performance of an exiting feature.
+   
+ - name: submit:statistics
+   color: 8888dd
+   description: submit numerical value in graph or table
+ - name: submit:test
+   color: 8888dd
+   description: submit result of tests (failed or succeed)
+ - name: submit:benchmark
+   color: 8888dd
+   description: submit a comparing benchmark
+ - name: submit:survey
+   color: 8888dd
+   description: submit public opinion (good or bad)
+ - name: submit:analysis
+   color: 8888dd
+   description: submit result of examination and expose knowledge from observation
+   
+ - name: about:language
+   color: ccccff
+   description: related to localization and translation (i18n)
+ - name: about:documentation
+   color: ccccff
+   description: Related to any type of documentation and manual.
+ - name: about:client
+   color: ccccff
+   description: concerning the local part of the software
+ - name: about:service
+   color: ccccff
+   description: concerning the distant server application
+ - name: about:account
+   color: ccccff
+   description: concerning user,player/admin account(login,password authentication)
+ - name: about:install
+   color: ccccff
+   description: Related to installation on different OS and building from source files
+ - name: about:startup
+   color: ccccff
+   description: concern starting process at launch time.
+ - name: about:network
+   color: ccccff
+   description: Related to network rfc,protocols connection.
+ - name: about:api
+   color: ccccff
+   description: Related to Application Programming Interface.
+ - name: about:extention
+   color: ccccff
+   description: concern plugins addons and others extensions
+ - name: about:ui
+   color: ccccff
+   description: Related to user interface and visual design.
+ - name: about:accessibility
+   color: ccccff
+   description: concern about for disabled people
+ - name: about:menu
+   color: ccccff
+   description: options in application menu interface
+ - name: about:save
+   color: ccccff
+   description: Related to records files and backups
+ - name: about:open
+   color: ccccff
+   description: related to load data files (e.g. opening file for editing)
+ - name: about:edit
+   color: ccccff
+   description: related to files editing
+ - name: about:settings
+   color: ccccff
+   description: about configuration and preferences
+ - name: about:files
+   color: ccccff
+   description: store organization for files and directories
+ - name: about:data
+   color: ccccff
+   description: about not visible audible purpose data 
+ - name: about:image
+   color: ccccff
+   description: about image pictures icons 
+ - name: about:texture
+   color: ccccff
+   description: concerning image texture for 3d models
+ - name: about:sound
+   color: ccccff
+   description: concerning audio fx noises
+ - name: about:animation
+   color: ccccff
+   description: concerning animation and video movies
+ - name: about:3d
+   color: ccccff
+   description: concerning 3d vector model shape
+ - name: about:logs
+   color: ccccff
+   description: concerning logs message notification outputs
+ - name: about:message
+   color: ccccff
+   description:  about displayed notification
+ - name: about:physics
+   color: ccccff
+   description: about physics  engine
+ - name: about:graphics
+   color: ccccff
+   description: about graphic render engine
+ - name: about:ai
+   color: ccccff
+   description: about artificial intelligence
+ - name: about:pathfinder
+   color: ccccff
+   description: about finding path in models
+ - name: about:game-play
+   color: ccccff
+   description: define goal and rules of the game,
+ - name: about:development
+   color: ccccff
+   description: the project road map and long term plan
+ - name: about:license
+   color: ccccff
+   description: license attribution
+ - name: about:contribution
+   color: ccccff
+   description: rules and guidelines for contributing.
+ - name: about:repository
+   color: ccccff
+   description: concern repository organization and management.
+   
+#  - name: first-timers-only
+#    ## include the old name to rename an existing label
+#    old name: Help Wanted
+
+
+## define milestones
+milestones:
+ - title: beta-release
+   description: required task for the next release
+   ## state of the milestone can be `open` or `close`
+   state: open
+
+
+## give specific users access to this repository.
+## Only valid on organization-owned repositories.
+## The permission to grant the collaborator. Can be one of:
+## * `pull` - can pull
+## * `push` - can pull and push
+## * `admin` - can pull and push and administer this repository.
+#collaborators:
+# - username: hubot
+#   permission: pull
+#
+## Note: The APIs needed for teams are not supported yet by GitHub Apps
+## https://developer.github.com/v3/apps/available-endpoints/
+#teams:
+#  - name: core
+#    permission: admin
+#   
+#  - name: docs
+#    permission: push
+
+
+## branches protection settings
+## https://developer.github.com/v3/repos/branches/#update-branch-protection
+branches:
+   ## Branch name pattern
+ - name: *
+   protection:
+      ## Require approving review on a pull request, before merging.
+      ## cannot have review approval on my own pull requests, so cannot use it if i'm working alone. 
+      ## or this restriction can be pass by unable the option:'enforce_admins' 
+      ## in this case all owner/contributors can force any pull request approval without any review.
+      ## so, for make pull request approval by review available, need at least 2 contributors.
+      #required_pull_request_reviews:
+      #   ## The number of approvals required(1-6)
+      #   required_approving_review_count: 1
+      #   ## dismiss approved reviews when a new commit is pushed.
+      #   dismiss_stale_reviews: true
+      #   ## blocks merge until code owners have reviewed.
+      #   require_code_owner_reviews: true
+      #   ## Specify which users and teams can dismiss pull request reviews.
+      #   ## Pass an empty dismissal_restrictions object to disable.
+      #   ## User and team dismissal_restrictions are only available for organization-owned repositories. 
+      #   ## Omit this parameter for personal repositories.
+      #   dismissal_restrictions:
+      #      users: []
+      #      teams: []
+      
+      ## Require status checks to pass before merging. Set to null to disable
+      #required_status_checks:
+      #   ## Require branches to be up to date before merging.
+      #   strict: true
+      #   ## list of status checks to require in order to merge into this branch
+      #   contexts: []
+      
+      ## Set to true to enforce all configured restrictions for administrators.
+      enforce_admins: true
+      
+      ## Restrict who can push to this branch. 
+      ## only available for organization-owned repositories.
+      ## Set to null to disable.
+      #restrictions:
+      #   users: []
+      #   teams: []
+
