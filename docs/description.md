@@ -2,16 +2,13 @@
 # Software-name
 **fancy slogan / ex: jQuery — the new JavaScript Wave**
 
-## ℹ️ Description
 
-### 🚩 Intro
+## 🚩 Intro
 A short summary presentation of what this software is.  
 *(if the name is an acronym or abbreviation, give full meaning)*  
 
 
-### 📋 Glossary
-*Disambiguation and meanings of used terms.*
-
+## 📋 Glossary
  - Computer  
 	Device working on binaries information.
  - Fire  
@@ -20,16 +17,14 @@ A short summary presentation of what this software is.
 	Autonomous machines,made to be slaves of humans.
 
 
-###  ℹ️ Details
-*long Description about:*
+## ℹ️ Description
  - the goal of this project
  - Who can be interested by this  project
  - what benefit from using it
  - how it work
 
 
-### 📝 Note
-*Extra additional notifications.*
+## 📝 Note
  - The software block and freeze when all keys are pressed at same time.  
 	Do Not press all the keyboard keys at same time.
  - If the computer shutdown while using this Software  
@@ -38,12 +33,7 @@ A short summary presentation of what this software is.
 	It leads to software destruction and may damage your device.
 
 
-
-## 🔗 Links
-*External references and related things.*
-
-### 👉 References:
-*List of references used to made this software.*
+## 👉 References:
  - [maxtof photo bank](http://www.maxtof.com)  
 	Website full of interesting photos and text files for related textures images.
  - Cycles and Quasi-Cycles Glosses   
@@ -51,8 +41,7 @@ A short summary presentation of what this software is.
  - [WW2 database](http://www.ww2-ontopia.net)  
 	Pictures and video of the real vehicles.
 
-### 👀 See also:
-*List of related external links to consult as well.*
+## 👀 See also:
  - [Supermax editor](http://www.fenix-sw.com/sm-ed.html)  
 	This software is efficient for editing the files of this project..
  - [countries-db](http://www.countries.com/db)  
@@ -62,22 +51,20 @@ A short summary presentation of what this software is.
 
 
 ## 📜 History
-*Chronological evolution of events.*
+ - Origin:
+	- The projet was initiate by [Mark Borello](mailto:mbo@msn.com) for [Frikaia.com](https://www.frikaia.com) but the main creators and author is [Nizi Maza](https://github.com/nizi) .
 
-### Origin:
-The projet was initiate by [Mark Borello](mailto:mbo@msn.com) for [Frikaia.com](https://www.frikaia.com) but the main creators and author is [Nizi Maza](https://github.com/nizi) .
-
-### Development:
- - In 2010  [Damien ford](mailto:damfo@gmail.com) continued the project with the help of [Tim Devens](https://github.com/timdev)  for the management.
- - The project moved on [Gitswitch](https://gitswitch.com) last summer
- - And now  [Microhard](https://www.microhard.com) is the official publisher
+ - Development:
+	- In 2010  [Damien ford](mailto:damfo@gmail.com) continued the project with the help of [Tim Devens](https://github.com/timdev)  for the management.
+	- The project moved on [Gitswitch](https://gitswitch.com) last summer
+	- And now  [Microhard](https://www.microhard.com) is the official publisher
 
 
 ## ❤️ Special thanks
-*Those who helped even sometimes without knowing it.*
  - [Wikipedia](https://www.wikipedia.org)  
 	Gave us so much knowledge...
  - The R.S.A.  
 	For providing infrastructure material and active solidarity.
  - Janice Bastos  
 	So much grateful for all the love given.
+
