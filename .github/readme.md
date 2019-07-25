@@ -11,7 +11,7 @@ releases are divided in two categories :
  - **pre-release** *aka experimental releases* introduce new features or rewrite implementations.
  Even if always tested before publishing, it's possible that something included fail to work.
  We expect from advanced adventurous users to test these releases .
-
+ 
  - And when a *pre-release* is considered enough tested and stable, it become the **latest release**.
  Its safer to run theses releases because supposed to include less bugs .
  Even if late bug discovery still possible it will be fix as soon as possible in another follow-up release.
